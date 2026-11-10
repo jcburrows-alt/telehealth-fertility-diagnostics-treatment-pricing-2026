@@ -6,6 +6,7 @@ authors:
   - name: "Get Skinny Online Health Economics & Editorial Research Desk"
     website: "https://getskinnyonline.com"
 version: "2026.11.1"
+doi: "10.5281/zenodo.24118654"
 date-released: "2026-11-10"
 license: CC-BY-4.0
 url: "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/"
@@ -14,6 +15,12 @@ identifiers:
   - type: url
     value: "https://huggingface.co/datasets/get-skinny-online/telehealth-fertility-diagnostics-treatment-pricing-2026"
     description: "Official Hugging Face Parquet Dataset Mirror"
+  - type: url
+    value: "https://www.kaggle.com/datasets/contentx10/telehealth-fertility-treatment-pricing-2026"
+    description: "Official Kaggle Dataset Mirror"
+  - type: doi
+    value: "10.5281/zenodo.24118654"
+    description: "Permanent CERN/Zenodo Academic DOI"
 keywords:
   - "fertility"
   - "reproductive-health"

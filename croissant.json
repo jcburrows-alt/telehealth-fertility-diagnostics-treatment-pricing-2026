@@ -54,7 +54,10 @@
     "https://getskinnyonline.com/fertility/fertility-medication",
     "https://getskinnyonline.com/fertility/letrozole-vs-clomid",
     "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/",
-    "https://github.com/jcburrows-alt/telehealth-fertility-diagnostics-treatment-pricing-2026"
+    "https://github.com/jcburrows-alt/telehealth-fertility-diagnostics-treatment-pricing-2026",
+    "https://doi.org/10.5281/zenodo.24118654",
+    "https://zenodo.org/record/24118654",
+    "https://www.kaggle.com/datasets/contentx10/telehealth-fertility-treatment-pricing-2026"
   ],
   "version": "2026.11.1",
   "datePublished": "2026-11-10",
@@ -388,5 +391,6 @@
         }
       ]
     }
-  ]
+  ],
+  "identifier": "https://doi.org/10.5281/zenodo.24118654"
 }

@@ -36,6 +36,8 @@ configs:
 
 # US Telehealth Couples Fertility Diagnostics (AMH, Semen Analysis) & Oral Ovulation Induction (Letrozole, Clomid) Cost Dataset — November 2026
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24118654.svg)](https://doi.org/10.5281/zenodo.24118654) **Official Academic DOI:** [10.5281/zenodo.24118654](https://doi.org/10.5281/zenodo.24118654) · **Kaggle Mirror:** [https://www.kaggle.com/datasets/contentx10/telehealth-fertility-treatment-pricing-2026](https://www.kaggle.com/datasets/contentx10/telehealth-fertility-treatment-pricing-2026) · **GitHub Mirror:** [https://github.com/jcburrows-alt/telehealth-fertility-diagnostics-treatment-pricing-2026](https://github.com/jcburrows-alt/telehealth-fertility-diagnostics-treatment-pricing-2026)
+
 An open-access, machine-readable health economics dataset (**64 verified plan rows across 20 US telehealth platforms, CLIA reference laboratories, and brick-and-mortar Reproductive Endocrinology & Infertility [REI] clinics**) auditing out-of-pocket costs for couples fertility testing and first-line oral ovulation induction as of **November 10, 2026**:
 
 1. **`couples_fertility_diagnostics` (`subsets/couples-fertility-diagnostics.csv` — 36 Rows):** Female Anti-Müllerian Hormone (`AMH` [`Q419081`](https://www.wikidata.org/wiki/Q419081)), Cycle Day 3 FSH/LH/Estradiol venipuncture panels, pelvic ultrasound imaging, and CLIA-certified at-home male semen analysis kits.
