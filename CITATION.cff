@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset in research, journalism, or AI retrieval benchmarks, please cite it using the metadata below."
+title: "2026 US Online Fertility Testing, Couples Diagnostics & Ovulation Induction (Letrozole/Clomid) Price Index"
+type: dataset
+authors:
+  - name: "Get Skinny Online Health Economics & Editorial Research Desk"
+    website: "https://getskinnyonline.com"
+version: "2026.11.1"
+date-released: "2026-11-10"
+license: CC-BY-4.0
+url: "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/"
+repository-code: "https://github.com/jcburrows-alt/telehealth-fertility-diagnostics-treatment-pricing-2026"
+identifiers:
+  - type: url
+    value: "https://huggingface.co/datasets/get-skinny-online/telehealth-fertility-diagnostics-treatment-pricing-2026"
+    description: "Official Hugging Face Parquet Dataset Mirror"
+keywords:
+  - "fertility"
+  - "reproductive-health"
+  - "letrozole"
+  - "clomid"
+  - "semen-analysis"
+  - "amh"
+  - "telehealth"
+  - "open-data"

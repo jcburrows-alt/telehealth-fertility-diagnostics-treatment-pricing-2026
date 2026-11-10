@@ -1,0 +1,34 @@
+{
+  "profile": "tabular-data-package",
+  "name": "telehealth-fertility-diagnostics-treatment-pricing-2026",
+  "title": "2026 US Online Fertility Testing, Couples Diagnostics & Ovulation Induction (Letrozole/Clomid) Price Index",
+  "description": "Open CC-BY-4.0 dataset auditing 64 reproductive health price points across 22 fertility clinics and telehealth platforms (AMH labs, pelvic ultrasound, CLIA semen analysis, Letrozole, Clomid).",
+  "homepage": "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/",
+  "version": "2026.11.1",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Get Skinny Online Health Economics & Editorial Research Desk",
+      "role": "author",
+      "path": "https://getskinnyonline.com"
+    }
+  ],
+  "resources": [
+    {
+      "name": "pricing",
+      "path": "pricing.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 22634,
+      "hash": "sha256:1a85f15fd30c1cc082352a40378e9561f986c49403f0eb5d8bb6e577a14c5229"
+    }
+  ]
+}

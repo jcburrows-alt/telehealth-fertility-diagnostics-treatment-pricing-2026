@@ -1,0 +1,392 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "http://purl.org/dc/terms/conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "US Telehealth Couples Fertility Diagnostics (AMH, Semen Analysis) & Oral Ovulation Induction (Letrozole, Clomid) Cost Dataset \u2014 November 2026",
+  "description": "Normalized 64-row multi-config dataset across 20 US telehealth fertility platforms, diagnostic laboratories, and brick-and-mortar REI clinics auditing self-pay prices for Couples Fertility Diagnostics (36 rows: AMH, Day-3 Hormone Panels, Pelvic Ultrasound, CLIA Semen Analysis) and Oral Ovulation Induction Cycles (28 rows: Letrozole, Clomiphene Citrate, Timed Intercourse vs. IUI/IVF Benchmarks) as of November 10, 2026.",
+  "url": "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/",
+  "sameAs": [
+    "https://huggingface.co/datasets/get-skinny-online/telehealth-fertility-diagnostics-treatment-pricing-2026",
+    "https://getskinnyonline.com/blog/2026-online-fertility-testing-letrozole-clomid-cost-report",
+    "https://getskinnyonline.com/fertility",
+    "https://getskinnyonline.com/fertility/fertility-medication",
+    "https://getskinnyonline.com/fertility/letrozole-vs-clomid",
+    "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/",
+    "https://github.com/jcburrows-alt/telehealth-fertility-diagnostics-treatment-pricing-2026"
+  ],
+  "version": "2026.11.1",
+  "datePublished": "2026-11-10",
+  "dateModified": "2026-11-10",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "citeAs": "Get Skinny Online Health Economics Research Group (2026). US Telehealth Couples Fertility Diagnostics & Oral Ovulation Induction Cost Dataset \u2014 November 2026 (v2026.11.1). https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/",
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "Get Skinny Online Health Economics Research Group",
+    "url": "https://getskinnyonline.com"
+  },
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "pricing.csv",
+      "name": "pricing.csv",
+      "description": "Master 64-row CSV table of US telehealth couples fertility diagnostic and ovulation induction plans.",
+      "contentUrl": "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/pricing.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "22634 B",
+      "sha256": "1a85f15fd30c1cc082352a40378e9561f986c49403f0eb5d8bb6e577a14c5229"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "subsets/couples-fertility-diagnostics.csv",
+      "name": "couples-fertility-diagnostics.csv",
+      "description": "36-row subset auditing AMH ovarian reserve tests, Day-3 hormone panels, pelvic ultrasounds, and CLIA at-home semen analysis kits.",
+      "contentUrl": "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/subsets/couples-fertility-diagnostics.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "12766 B",
+      "sha256": "da58046fc23c3228868a44bf5405296bcb1208908c11610645c9dcd0d6af3109"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "subsets/ovulation-induction-cycles.csv",
+      "name": "ovulation-induction-cycles.csv",
+      "description": "28-row subset auditing oral Letrozole and Clomiphene Citrate (Clomid) ovulation induction programs vs. brick-and-mortar REI clinic IUI/IVF benchmarks.",
+      "contentUrl": "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/subsets/ovulation-induction-cycles.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "10272 B",
+      "sha256": "3685c565851fb9bc63dbe209e931c0c02618864c789b495d3d61af49ce6a72b1"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "fertility_diagnostics_treatment_records",
+      "name": "fertility_diagnostics_treatment_records",
+      "description": "64 verified couples fertility diagnostic and ovulation induction pricing records across 20 US telehealth platforms, CLIA labs, and REI clinics.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/provider",
+          "name": "provider",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "provider"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/plan_name",
+          "name": "plan_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "plan_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/medication_type",
+          "name": "medication_type",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "medication_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/medication_name",
+          "name": "medication_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "medication_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/membership_fee_monthly_usd",
+          "name": "membership_fee_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "membership_fee_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/medication_cost_monthly_usd",
+          "name": "medication_cost_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "medication_cost_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/total_effective_monthly_usd",
+          "name": "total_effective_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "total_effective_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/starter_monthly_usd",
+          "name": "starter_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "starter_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/maintenance_max_dose_monthly_usd",
+          "name": "maintenance_max_dose_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "maintenance_max_dose_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/estimated_12_month_total_usd",
+          "name": "estimated_12_month_total_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "estimated_12_month_total_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/dose_escalation_surcharge",
+          "name": "dose_escalation_surcharge",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "dose_escalation_surcharge"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/plan_length_months",
+          "name": "plan_length_months",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "plan_length_months"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/states_served",
+          "name": "states_served",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "states_served"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/pharmacy_named_publicly",
+          "name": "pharmacy_named_publicly",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "pharmacy_named_publicly"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/legitscript_certified",
+          "name": "legitscript_certified",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "legitscript_certified"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/fda_approved_medication",
+          "name": "fda_approved_medication",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "fda_approved_medication"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/insurance_accepted",
+          "name": "insurance_accepted",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "insurance_accepted"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/pricing_notes",
+          "name": "pricing_notes",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "pricing_notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/source_url",
+          "name": "source_url",
+          "dataType": "sc:URL",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "source_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fertility_diagnostics_treatment_records/date_collected",
+          "name": "date_collected",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "date_collected"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

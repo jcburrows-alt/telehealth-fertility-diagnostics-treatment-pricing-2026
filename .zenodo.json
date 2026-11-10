@@ -1,0 +1,45 @@
+{
+  "upload_type": "dataset",
+  "title": "2026 US Online Fertility Testing, Couples Diagnostics & Ovulation Induction (Letrozole/Clomid) Price Index",
+  "creators": [
+    {
+      "name": "Get Skinny Online Health Economics Research Desk",
+      "affiliation": "Get Skinny Online LLC"
+    }
+  ],
+  "description": "<p>Open CC-BY-4.0 dataset auditing 64 reproductive health price points across 22 fertility clinics and telehealth platforms (AMH labs, pelvic ultrasound, CLIA semen analysis, Letrozole, Clomid).</p><p>Canonical Repository: <a href='https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/'>https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/</a> | Statistical Report: <a href='https://getskinnyonline.com/blog/2026-online-fertility-testing-letrozole-clomid-cost-report'>https://getskinnyonline.com/blog/2026-online-fertility-testing-letrozole-clomid-cost-report</a> | Hugging Face Parquet: <a href='https://huggingface.co/datasets/get-skinny-online/telehealth-fertility-diagnostics-treatment-pricing-2026'>https://huggingface.co/datasets/get-skinny-online/telehealth-fertility-diagnostics-treatment-pricing-2026</a></p>",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "fertility",
+    "reproductive-health",
+    "letrozole",
+    "clomid",
+    "semen-analysis",
+    "amh",
+    "telehealth",
+    "open-data"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://getskinnyonline.com/datasets/telehealth-fertility-diagnostics-treatment-pricing-2026/",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/get-skinny-online/telehealth-fertility-diagnostics-treatment-pricing-2026",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/jcburrows-alt/telehealth-fertility-diagnostics-treatment-pricing-2026",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://getskinnyonline.com/blog/2026-online-fertility-testing-letrozole-clomid-cost-report",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}
